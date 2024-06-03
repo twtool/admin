@@ -1,0 +1,3 @@
+[submodule "admin-vue"]
+	path = admin-vue
+	url = git@github.com:twtool/admin-vue.git
