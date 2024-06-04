@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: local
+admin:
+  framework:
+    security:
+      permit-all-patterns:
+        - "/login"

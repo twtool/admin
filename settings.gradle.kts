@@ -17,3 +17,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+include(":admin-bootstrap")
+include(":admin-common")
+include(":admin-framework")
+
+include(":admin-system")

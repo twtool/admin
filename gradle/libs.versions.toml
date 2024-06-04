@@ -1,15 +1,51 @@
 [versions]
-kotlin = "2.0.0"
-
+auth0-jwt = "4.4.0" # https://github.com/auth0/java-jwt/releases
+kotlin = "2.0.0" # https://github.com/JetBrains/kotlin/releases
+mybatis-plus = "3.5.6" # https://github.com/baomidou/mybatis-plus/releases
+mysql-connector = "8.4.0" # https://dev.mysql.com/doc/connector-j/en/
 spring-boot = "3.3.0" # https://docs.spring.io/spring-boot/
 spring-dependency-management = "1.1.5" # https://plugins.gradle.org/plugin/io.spring.dependency-management
 
 [libraries]
+apache-commons-lang3 = { group = "org.apache.commons", name = "commons-lang3" }
+apache-commons-codec = { group = "commons-codec", name = "commons-codec" }
 
+auth0-jwt = { group = "com.auth0", name = "java-jwt", version.ref = "auth0-jwt" }
+
+jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
+
+jakarta-servlet-api = { group = "jakarta.servlet", name = "jakarta.servlet-api" }
+jakarta-validation-api = { group = "jakarta.validation", name = "jakarta.validation-api" }
+
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
+
+mybatis-plus-annotation = { group = "com.baomidou", name = "mybatis-plus-annotation", version.ref = "mybatis-plus" }
+mybatis-plus-core = { group = "com.baomidou", name = "mybatis-plus-core", version.ref = "mybatis-plus" }
+mybatis-plus-extension = { group = "com.baomidou", name = "mybatis-plus-extension", version.ref = "mybatis-plus" }
+mybatis-plus-boot-starter = { group = "com.baomidou", name = "mybatis-plus-spring-boot3-starter", version.ref = "mybatis-plus" }
+
+mysql-connector = { group = "com.mysql", name = "mysql-connector-j", version.ref = "mysql-connector" }
+slf4j-api = { group = "org.slf4j", name = "slf4j-api" }
+
+spring-context = { group = "org.springframework", name = "spring-context" }
+spring-security-core = { group = "org.springframework.security", name = "spring-security-core" }
+spring-security-test = { group = "org.springframework.security", name = "spring-security-test" }
+spring-web = { group = "org.springframework", name = "spring-web" }
+
+spring-boot-autoconfigure = { group = "org.springframework.boot", name = "spring-boot-autoconfigure" }
+spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
+spring-boot-starter-aop = { group = "org.springframework.boot", name = "spring-boot-starter-aop" }
+spring-boot-starter-data-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis" }
+spring-boot-starter-freemarker = { group = "org.springframework.boot", name = "spring-boot-starter-freemarker" }
+spring-boot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
+spring-boot-starter-quartz = { group = "org.springframework.boot", name = "spring-boot-starter-quartz" }
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+spring-boot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
 
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"}
-kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin"}
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
 
 spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
 spring-depentency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

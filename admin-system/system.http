@@ -1,0 +1,15 @@
+### 登录
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+> {% client.global.set("JWT_TOKEN", response.body.data); %}
+
+
+### 获取登录用户信息
+GET http://localhost:8080/profile
+Authorization: Bearer {{JWT_TOKEN}}
